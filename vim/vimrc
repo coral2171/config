@@ -1,22 +1,60 @@
-" Essential
-set nocompatible
-syntax on
-set viminfofile=NONE
-set encoding=utf-8
-set history=128
-set mouse=a
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Core Settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set nocompatible                  " Use Vim defaults instead of Vi compatibility
+set encoding=utf-8                " Use UTF-8 character encoding
+set viminfofile=NONE              " Disable persistent Vim information storage
+set history=128                   " Retain the last 128 command-line entries
 
-" UI
-set number
-set showmatch
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Interface and Navigation
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set number                        " Display absolute line numbers
+set cursorline                    " Highlight the current line
+set cursorcolumn                  " Highlight the current column
+set showmatch                     " Highlight matching brackets
+set mouse=a                       " Enable mouse support in all modes
+set ruler                         " Display cursor position in the status area
+set showcmd                       " Show incomplete commands as they are typed
+set noerrorbells                  " Disable error bells
+set visualbell                    " Enable visual bells
 
-" Indentation
-set autoindent
-set tabstop=4
-set shiftwidth=4
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Indentation and Editing
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set tabstop=4                     " Display tab characters as four columns
+set softtabstop=4                 " Use four spaces per Tab key press
+set shiftwidth=4                  " Use four spaces for indentation commands
+set expandtab                     " Convert Tab key presses to spaces
+set autoindent                    " Preserve indentation from the previous line
+set smartindent                   " Apply basic automatic indentation
+set smarttab                      " Use shiftwidth when indenting at line start
+set backspace=indent,eol,start    " Allow natural Backspace behavior
+set hidden                        " Allow switching buffers with unsaved changes
 
-" Search
-set hlsearch
-set incsearch
-set ignorecase
-set smartcase
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Search Behavior
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set hlsearch                      " Highlight all matches of the current search
+set incsearch                     " Show search matches while typing
+set ignorecase                    " Ignore case in searches by default
+set smartcase                     " Respect case when the search contains uppercase
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Completion and Command-Line Navigation
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set wildmenu                      " Enable enhanced command-line completion
+set wildmode=longest:full,full    " Complete commands and filenames interactively
+set completeopt=menuone,noselect  " Configure the insert-mode completion menu
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Window and Split Management
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set splitbelow                    " Open horizontal splits below the current window
+set splitright                    " Open vertical splits to the right
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Syntax Highlighting and Filetype Support
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+syntax on                         " Enable syntax highlighting
+filetype plugin indent on         " Enable filetype detection, plugins, and indentation
