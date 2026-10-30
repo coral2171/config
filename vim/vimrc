@@ -17,7 +17,6 @@ set mouse=a                       " Enable mouse support in all modes
 set ruler                         " Display cursor position in the status area
 set showcmd                       " Show incomplete commands as they are typed
 set noerrorbells                  " Disable error bells
-set visualbell                    " Enable visual bells
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Indentation and Editing
